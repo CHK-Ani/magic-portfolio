@@ -1,24 +1,24 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Chike",
+  lastName: "Ani",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Product Manager",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about people, technology, and share thoughts on the intersection of
+      innovation and development.
     </>
   ),
 };
@@ -29,22 +29,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/CHK-Ani",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/chikeani/",
   },
   {
     name: "X",
     icon: "x",
     link: "",
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:example@gmail.com",
   },
 ];
 
@@ -52,11 +47,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Product, Strategy, Innovation.</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Chike, an aspring Product Manager and current student at Georgia State Universty.
+      <br /> Welcome to my portfolio!
     </>
   ),
 };
@@ -81,9 +76,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+         Currently enrolled at Georgia State University majoring in Computer Information Systems. Chike is passionate about technology and finding innovative solutions to complex problems. With concentrations including Data Analytics and Digital Innovation. He strives to become that intersection of great technological advancement.  At GSU he participates in several clubs including the Student Government Association, Cybersecurity Club, and Entrepreneurship and Innovation Institute, honing his leadership and collaboration skills.
       </>
     ),
   },
@@ -92,17 +85,17 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "General Electric Vernova",
+        timeframe: "May 2024 - August 2024",
+        role: "Software Development and Technical Product Management Intern",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+          <>Employed an intensive combination of on-the-job training in development, governance, and analyzing various software and data applications including grid orchestration software, DevOps, analytics, and digital user interfaces/experiences.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Devised customer target demographic that includes over 30 countries, using my previous research, analysis, and examination of product strategy. This made complex data and decision-making easier for senior executives. 
+          </>,
+          <>
+            Worked directly under the Development team for the Artificial Intelligence and Machine Learning Analytic “Disruption Prepare.” Applied development skills to front-end and back-end development processes, reducing critical spark errors to 0. This included providing unit testing with code coverage of 70% for Disruption Prepare data pipelines.
           </>,
         ],
         images: [
@@ -116,39 +109,60 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Georgia State University",
+        timeframe: "August 2023 - May 2024",
+        role: "Student Assistant - Technical Advisor and Administrator	",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Integrated and maintained employee cloud-based systems, which in turn are used to capture student data across Georgia State University Learning Centers. Analyzed this data to curate project resources in cooperation with a team to create the best possible student experience inside learning centers for two Georgia State University semesters.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led a cross-functional to query and analyze data trends to uncover hidden patterns, correlations, and anomalies that impacted over 1,200 students performance inside Georgia State University Learning Centers.
           </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "Micro Center",
+        timeframe: "December 2021 - May 2022",
+        role: "Work-Based Learning CSR",
+        achievements: [
+          <>
+Directly managed customer and company databases, which oversaw key information including transaction, customer, and employee efficiency data, which were the backbone of the organization's data and sales infrastructure.           </>,
+          <>
+A key member of the Consulting and Sales team, achieving a 35% sale rate through direct customer engagement and solution-driven proposals boosting overall site sales and commission rate by 40%.          </>,
+          <>
+Collaborated and shadowed the computer engineering/repair team to explore and extract valuable insights that were used to boost sales, and customer satisfaction, and optimize store efficiency.        </>,
         ],
         images: [],
       },
     ],
   },
+  
+
+
+
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Georgia State University - May 2026",
+        description: <>Bachelor of Business Administration, Major: Computer Information Systems</>,
+
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to "false" to hide this section
     title: "Technical skills",
     skills: [
       {
